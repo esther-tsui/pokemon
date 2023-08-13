@@ -119,10 +119,14 @@ const Cards = () => {
     if (error) { return <p>Failed</p>; }
     return (
         <>
-    	<input onChange={handleChange}/>
+        <div style={{paddingTop: '5vh', paddingBottom: '5vh'}}>
+        <input onChange={handleChange}/>
+        <Button onClick={handleClick}>Search</Button>
+        </div>
+    	
         {data ? 
             <div >
-            <Card border="waring" style={{backgroundColor: cardColor}} className="card-container">
+            <Card border="waring" style={{backgroundColor: cardColor, marginBottom: "5vh", border: "20px solid #f8f598", padding: "15px"}} className="card-container">
             <div>
             <Table >
                 <tr className="basic-pokemon">
@@ -213,7 +217,7 @@ const Cards = () => {
                 
                 </div>
         : null }
-        <Button onClick={handleClick}>Search</Button>
+        
         </>
     );
 };

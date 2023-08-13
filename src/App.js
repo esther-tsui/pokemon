@@ -10,9 +10,14 @@ function App() {
   return (
 
 		<QueryClientProvider client={queryClient}>
-
+    <div style={{ minHeight: '100vh'}}>
+      
+    <div style={{minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: "center", alignItems:"center", flexBasis: 0}}>
     <Cards />
+    </div>
     <ReactQueryDevtools />
+    </div>
+
     </QueryClientProvider>
 
   );

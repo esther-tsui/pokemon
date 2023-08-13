@@ -38,11 +38,9 @@
 }
 
 .card-container {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
   height: 300px;
   width: 400px;
-  border: 25px, #f8f598;
+
 }
 
 .three-element {
